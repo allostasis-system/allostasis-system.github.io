@@ -179,9 +179,10 @@
     body { overflow-x: hidden; }
     nav { padding: 16px 24px; }
     .nav-links { display: none; }
-.lang-switch-wrap { display: flex; }
-.nav-logo { max-width: calc(100% - 100px); }
-.nav-wordmark { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.lang-switch-wrap { display: flex; margin-left: auto; flex-shrink: 0; }
+nav { justify-content: flex-start; gap: 12px; }
+.nav-logo { flex-shrink: 1; min-width: 0; }
+.nav-wordmark { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; max-width: 140px; }
     .hero-content { padding: 120px 24px 60px; }
     .hero-image { opacity: 0.08; width: 80%; }
     .section { padding: 60px 24px; }
