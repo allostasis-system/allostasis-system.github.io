@@ -177,11 +177,11 @@
 
 @media (max-width: 900px) {
     body { overflow-x: hidden; }
-    nav { padding: 16px 12px; justify-content: flex-start; }
+    nav { padding: 16px 12px; justify-content: space-between; max-width: 100vw; box-sizing: border-box; }
 .nav-links { display: none; }
-.lang-switch-wrap { display: flex; flex-shrink: 0; margin-left: auto; }
-.nav-logo { flex-shrink: 1; min-width: 0; }
-.nav-wordmark { overflow: hidden; white-space: nowrap; }
+.lang-switch-wrap { display: flex; flex-shrink: 0; }
+.nav-logo { max-width: calc(100vw - 100px); overflow: hidden; }
+.nav-wordmark { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
     .hero-content { padding: 120px 24px 60px; }
     .hero-image { opacity: 0.08; width: 80%; }
     .section { padding: 60px 24px; }
