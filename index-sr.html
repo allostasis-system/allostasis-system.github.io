@@ -179,7 +179,7 @@
     body { overflow-x: hidden; }
     nav { padding: 16px 24px; }
     .nav-links { display: none; }
-.nav-links:has(.lang-switch) { display: flex; }
+.lang-switch-wrap { display: flex; }
     .hero-content { padding: 120px 24px 60px; }
     .hero-image { opacity: 0.08; width: 80%; }
     .section { padding: 60px 24px; }
@@ -211,10 +211,9 @@
     <li><a href="#pillars">Стубови</a></li>
     <li><a href="#about">О мени</a></li>
     <li><a href="#contact">Контакт</a></li>
-    <li class="lang-switch">
-      <a href="index.html">EN</a>
-      <a href="index-sr.html" class="lang-active">СР</a>
-    </li>
+  </ul>
+  <ul class="nav-links lang-switch-wrap">
+    <li class="lang-switch"><a href="index.html">EN</a><a href="index-sr.html" class="lang-active">СР</a></li>
   </ul>
 </nav>
 
