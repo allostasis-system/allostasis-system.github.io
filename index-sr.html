@@ -24,7 +24,6 @@
     --font-serif: 'Cormorant Garamond', serif;
     --font-body: 'DM Sans', sans-serif;
   }
-    * { outline: 1px solid red; }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
@@ -180,7 +179,9 @@
     body { overflow-x: hidden; }
     nav { padding: 16px 12px; }
     .nav-links { display: none; }
-   .lang-switch-wrap { display: flex; }
+  .lang-switch-wrap { display: flex; flex-shrink: 0; }
+.nav-logo { flex-shrink: 1; min-width: 0; }
+.nav-wordmark { overflow: hidden; white-space: nowrap; }
     .hero-content { padding: 120px 24px 60px; }
     .hero-image { opacity: 0.08; width: 80%; }
     .section { padding: 60px 24px; }
