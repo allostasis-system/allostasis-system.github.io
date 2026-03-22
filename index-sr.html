@@ -75,8 +75,9 @@
 
  .lang-switch { display: flex; align-items: center; gap: 4px; margin-left: auto; }
   .lang-switch a { font-family: var(--font-body); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; padding: 5px 10px; border: 1px solid transparent; transition: all 0.3s; font-weight: 400; }
-  .lang-switch a.lang-active { color: var(--navy); background: var(--gold); border-color: var(--gold); }
-  .lang-switch a:not(.lang-active) { color: var(--muted); border-color: var(--navy-border); }
+  .lang-switch a.lang-active { color: var(--navy); background: var(--gold); border-color: var(--gold); opacity: 0; transition: opacity 0.3s; }
+  .lang-switch a:not(.lang-active) { color: var(--muted); border-color: var(--navy-border); opacity: 0; transition: opacity 0.3s; }
+  .lang-switch:hover a { opacity: 1; }
   .lang-switch a:not(.lang-active):hover { color: var(--gold); border-color: var(--gold); }
 
   .hero { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; }
