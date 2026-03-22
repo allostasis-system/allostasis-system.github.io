@@ -770,16 +770,20 @@
     font-weight: 400;
   }
 
-  .lang-switch a.lang-active {
-    color: var(--navy);
-    background: var(--gold);
-    border-color: var(--gold);
+  .lang-switch a.lang-active { 
+    color: var(--navy); 
+    background: var(--gold); 
+    border-color: var(--gold); 
+    opacity: 0; transition: opacity 0.3s; 
   }
 
-  .lang-switch a:not(.lang-active) {
-    color: var(--muted);
-    border-color: var(--navy-border);
-  }
+.lang-switch a:not(.lang-active) { 
+  color: var(--muted); 
+  border-color: var(--navy-border);                             
+  opacity: 0; 
+  transition: opacity 0.3s; 
+}
+  .lang-switch:hover a { opacity: 1; }
 
   .lang-switch a:not(.lang-active):hover {
     color: var(--gold);
