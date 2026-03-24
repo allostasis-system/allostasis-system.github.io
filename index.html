@@ -807,7 +807,8 @@ footer { flex-direction: column; gap: 20px; text-align: center; }
     .cta-banner { padding: 60px 24px; }
     .pillars-header { flex-direction: column; align-items: flex-start; }
     .pillars-header img { margin-right: 0 !important; margin-bottom: 32px; height: 200px !important; align-self: center; }
-  .lang-switch a:not(.lang-active) { color: var(--off-white); border-color: var(--navy-border); }
+ .lang-switch a.lang-active { opacity: 1; }
+.lang-switch a:not(.lang-active) { opacity: 1; color: var(--navy); background: var(--muted); border-color: var(--muted); }
   }
 </style>
 </head>
