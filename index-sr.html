@@ -200,7 +200,8 @@
     #about { width: 100%; box-sizing: border-box; overflow: hidden; }
     .about-photo-wrap { width: 100%; max-width: 100%; overflow: hidden; }
     .about-photo-wrap img { width: 100%; max-width: 100%; display: block; }
-  .lang-switch a:not(.lang-active) { color: var(--off-white); border-color: var(--navy-border); }
+ .lang-switch a.lang-active { opacity: 1; }
+.lang-switch a:not(.lang-active) { opacity: 1; color: var(--navy); background: var(--muted); border-color: var(--muted); }
   }
 </style>
 </head>
